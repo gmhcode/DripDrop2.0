@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90E67F9121C33A1600F98299 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E67F9021C33A1600F98299 /* Weather.swift */; };
 		F782C8BF21C3280100D255F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F782C8BE21C3280100D255F5 /* AppDelegate.swift */; };
 		F782C8C121C3280100D255F5 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F782C8C021C3280100D255F5 /* WeatherViewController.swift */; };
 		F782C8C421C3280100D255F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F782C8C221C3280100D255F5 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		90E67F9021C33A1600F98299 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		F782C8BB21C3280100D255F5 /* DripDrop2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DripDrop2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F782C8BE21C3280100D255F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F782C8C021C3280100D255F5 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
@@ -37,10 +39,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90E67F9221C33A2700F98299 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				90E67F9021C33A1600F98299 /* Weather.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F782C8B221C3280100D255F5 = {
 			isa = PBXGroup;
 			children = (
 				F782C8BD21C3280100D255F5 /* DripDrop2.0 */,
+				F782C8D621C3298400D255F5 /* Resources */,
 				F782C8BC21C3280100D255F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,8 +67,8 @@
 		F782C8BD21C3280100D255F5 /* DripDrop2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				F782C8D621C3298400D255F5 /* Resources */,
 				F782C8D521C3297900D255F5 /* ViewControllers */,
+				90E67F9221C33A2700F98299 /* Model */,
 				F782C8D421C3296D00D255F5 /* WeatherCollectionViewCell */,
 			);
 			path = DripDrop2.0;
@@ -162,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90E67F9121C33A1600F98299 /* Weather.swift in Sources */,
 				F782C8D121C328C100D255F5 /* WeatherCollectionViewCell.swift in Sources */,
 				F782C8C121C3280100D255F5 /* WeatherViewController.swift in Sources */,
 				F782C8BF21C3280100D255F5 /* AppDelegate.swift in Sources */,
@@ -311,7 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/DripDrop2.0/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,7 +340,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/DripDrop2.0/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
